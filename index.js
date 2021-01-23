@@ -9,8 +9,13 @@ require('./models/User');
 require('./models/Blog');
 require('./services/passport');
 
-mongoose.Promise = global.Promise;
-mongoose.connect(keys.mongoURI, { useMongoClient: true });
+// mongoose.Promise = global.Promise;
+
+mongoose.connect(keys.mongoURI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true
+})
 
 const app = express();
 
