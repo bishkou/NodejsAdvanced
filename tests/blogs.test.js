@@ -103,7 +103,6 @@ describe('User is not logged in', () => {
                     }
                 }).then(res => res.json());
 
-
             })
         expect(result).toEqual({ error: 'You must log in!'});
     })
