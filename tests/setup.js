@@ -10,3 +10,8 @@ mongoose.connect(keys.mongoURI, {
     useUnifiedTopology: true,
     useCreateIndex: true
 })
+
+afterAll( (done) => {
+  // mongoose.connection.close();
+    done()
+});
