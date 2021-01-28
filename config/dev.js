@@ -4,4 +4,6 @@ module.exports = {
   googleClientSecret: '2OrnV1Sl_o_cKoaBjjIMgLnx',
   mongoURI: 'mongodb+srv://webipie:webipie@webipie.ziihb.mongodb.net/webipie?retryWrites=true&w=majority',
   cookieKey: '123123123',
+  redisUrl: 'redis://127.0.0.1:6379'
+
 };
