@@ -11,7 +11,8 @@ mongoose.connect(keys.mongoURI, {
     useCreateIndex: true
 })
 
-afterAll( (done) => {
+afterAll( async (done) => {
   // mongoose.connection.close();
+    await mongoose.connection.close();
     done()
 });
