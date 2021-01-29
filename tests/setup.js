@@ -12,7 +12,6 @@ mongoose.connect(keys.mongoURI, {
 })
 
 afterAll( async (done) => {
-  // mongoose.connection.close();
     await mongoose.connection.close();
     done()
 });
