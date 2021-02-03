@@ -4,7 +4,6 @@ const cleanCache = require('../middlewares/cleanCache');
 
 const Blog = mongoose.model('Blog');
 
-
 module.exports = app => {
   app.get('/api/blogs/:id', requireLogin, async (req, res, next) => {
     const blog = await Blog.findOne({
